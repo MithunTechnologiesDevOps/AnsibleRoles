@@ -3,4 +3,4 @@
    - common
 - hosts: appServers
   roles:
-   - apache 
+   - { role: apache , become: yes }

@@ -1,5 +1,4 @@
 ## Standalone Tomcat Deployment
-
 - Requires Ansible 1.2 or newer
 - Expects CentOS/RHEL 6.x hosts
 
@@ -27,3 +26,4 @@ Here are some ideas for ways that these playbooks could be extended:
 
 We would love to see contributions and improvements, so please fork this
 repository on GitHub and send us your changes via pull requests.
+

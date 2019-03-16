@@ -6,3 +6,6 @@
   roles:
    - common
    - tomcat
+- hosts: all
+  roles:
+   - common

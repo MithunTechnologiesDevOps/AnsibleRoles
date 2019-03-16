@@ -1,0 +1,14 @@
+# tasks file for apache
+--- 
+- 
+  name: "Install httpd Package"
+  yum: "name=httpd state=latest"
+- 
+  name: "Copy httpd configuration file"
+  template: "src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf"
+- 
+  copy: "src=index.html dest=/var/www/html"
+  name: "Copy index.html file"
+  notify: 
+    - "restart apache"
+
